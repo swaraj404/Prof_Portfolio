@@ -73,12 +73,14 @@ const tick = () => {
     contentContainerRef.value.style.transform = `translateY(${translation}px)`;
 }
 
-onMounted(() => {
-    computeLayout()
+onMounted(async () => {
+    if (document.fonts) await document.fonts.ready;
+
+    computeLayout();
     component.value = new AnimatedComponent(props.contentSection);
     component.value.tick = tick;
     component.value.addAnimationTrigger(containerRef.value, "scroll");
-
+    
     windowComponent.value = new AnimatedComponent();
     windowComponent.value.tick = computeLayout;
     windowComponent.value.addAnimationTrigger(window, "resize");

@@ -92,7 +92,7 @@ onBeforeUnmount(() => {
                                         {{ story.description }}
                                     </p>
                                 </div>
-                                <img :src="story.image" class="mr-0 md:mr-[6dvw] lg:mr-[12dvw] w-fit aspect-[9/16] max-h-full object-contain object-bottom"/>
+                                <img :src="story.image" alt="" class="mr-0 md:mr-[6dvw] lg:mr-[12dvw] w-fit aspect-[9/16] max-h-full object-contain object-bottom"/>
                             </div>
                         </div>
                     </div>

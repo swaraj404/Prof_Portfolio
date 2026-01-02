@@ -12,7 +12,7 @@ import stories from '@/data/about-me.json'
                 <div v-for="(story, i) in stories" :key="i"
                     class="h-fit flex-1 p-4 flex flex-col items-start cursor-default text-left gap-2">
                     <div class="rounded-2xl object-contain aspect-video w-full overflow-hidden">
-                        <img :src="story.image" class="h-full w-full object-contain" />
+                        <img :src="story.image" alt="" class="h-full w-full object-contain" />
                     </div>
                     <h1 class="font-bold text-xl leading-none font-rubik">{{ story.when }}</h1>
                     <p class="flex-1 h-fit">

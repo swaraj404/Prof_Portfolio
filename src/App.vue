@@ -54,9 +54,6 @@ onMounted(async () => {
       <Testimonials v-if="md" />
       <TestimonialsMobile v-else  />
       <Contact />
-      <footer class="relative">
-        <span class="absolute bottom-0 text-sm p-[4dvw] opacity-35 text-white -z-10">© {{ new Date().getFullYear() }} Cyprien Jaquier. All rights reserved.</span>
-      </footer>
     </div>
   </div>
 </template>
