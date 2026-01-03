@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
                 <div class="absolute h-full w-full top-0 left-0 rounded-4xl brightness-[.85] bg-[url('/contact/sky.jpeg')] bg-cover -z-10 overflow-hidden">
                     <div class="h-full w-full flex justify-center items-end relative">
                         <img src="/contact/mountains.png" alt="" data-parallax-value=".005" class="absolute h-auto  w-full scale-110 object-cover parallax"/>
-                        <img src="/contact/path.png" alt="" data-parallax-value=".025" class="absolute h-auto w-full translate-y-1/12 scale-110 object-cover parallax"/>
+                        <img src="/contact/path.png" alt="" data-parallax-value=".025" class="absolute h-auto w-full translate-y-1/3 scale-110 object-cover parallax"/>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8 px-8 text-white">

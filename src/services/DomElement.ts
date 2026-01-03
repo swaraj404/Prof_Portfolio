@@ -7,7 +7,7 @@ import { EventObserver } from "@/services/EventObserver";
  */
 export class DomElement {
     public element: HTMLElement;
-    private listeners: { [key: string]: EventObserver } = {};
+    private listeners: { [key: string]: { observer: EventObserver; boundHandler: EventListener } } = {};
 
     constructor(el: HTMLElement) {
         this.element = el;
@@ -21,7 +21,7 @@ export class DomElement {
      */
     public addListener(event: string, componentId: symbol, callback: () => void): void {
         if (!this.listeners[event]) this.createEventObserver(event);
-        this.listeners[event].addAction(componentId, callback);
+        this.listeners[event].observer.addAction(componentId, callback);
     }
 
     /**
@@ -30,8 +30,8 @@ export class DomElement {
      */
     public removeListenersByComponentId(componentId: symbol): void {
         Object.entries(this.listeners).forEach(([event, listener]) => {
-            listener.removeAction(componentId);
-            if (listener.actions.length === 0) this.removeEventObserver(event, listener);
+            listener.observer.removeAction(componentId);
+            if (listener.observer.actions.length === 0) this.removeEventObserver(event);
         });
     }
 
@@ -40,18 +40,19 @@ export class DomElement {
      * @param event Event type to listen
      */
     private createEventObserver(event: string): void {
-        const listener = new EventObserver;
-        this.element.addEventListener(event, listener.emit.bind(listener), { passive: true });
-        this.listeners[event] = listener;
+        const observer = new EventObserver();
+        const boundHandler = (e: Event) => observer.emit(e);
+        this.element.addEventListener(event, boundHandler, { passive: true });
+        this.listeners[event] = { observer, boundHandler: boundHandler as EventListener };
     }
 
     /**
      * Remove the event listener and custom listener
      * @param event Event type to listen
-     * @param listener The EventObserver that is triggered by the native listener 
      */
-    private removeEventObserver(event: string, listener: EventObserver): void {
-        this.element.removeEventListener(event, listener.emit.bind(listener));
+    private removeEventObserver(event: string): void {
+        const { boundHandler } = this.listeners[event];
+        this.element.removeEventListener(event, boundHandler);
         delete this.listeners[event];
     }
 }
