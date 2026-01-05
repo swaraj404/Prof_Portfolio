@@ -10,6 +10,7 @@ import Awards from '@/views/Awards.vue';
 import Testimonials from '@/views/Testimonials.vue';
 import TestimonialsMobile from '@/views/TestimonialsMobile.vue';
 import Contact from '@/views/Contact.vue';
+import CustomA from './components/CustomA.vue';
 import { provideScrollContext } from '@/composables/useScrollContext';
 import { useCursorContext } from '@/composables/useCursorContext';
 import { useWindowContext } from '@/composables/useWindowContext';
@@ -54,6 +55,11 @@ onMounted(async () => {
       <Testimonials v-if="md" />
       <TestimonialsMobile v-else  />
       <Contact />
+      <footer class="relative">
+        <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
+          <CustomA text="Read the code here" href="https://github.com/Cyprien-png/portfolio" target="_blank" />
+        </span>
+      </footer>
     </div>
   </div>
 </template>
