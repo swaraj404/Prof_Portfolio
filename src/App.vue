@@ -42,18 +42,22 @@ onMounted(async () => {
 </script>
 
 <template>
+  <section id="loading"
+    class="outline-[100dvw] outline-white rounded-[999px] bg-transparent h-0 w-0 fixed top-1/2 left-1/2 z-[100] -translate-1/2 flex items-center justify-center">
+    <span class="absolute font-ledger h-40 w-96 flex justify-center items-center">The paint is drying...</span>
+  </section>
   <LiquidFilter />
   <LiquidTexturedFilter />
   <div ref="containerRef" id="container" class="overflow-auto h-dvh flex flex-col items-center font-ledger">
     <LiquidNavbar />
     <div ref="contentRef" id="content" class=" w-full flex flex-col">
       <Home />
-      <AboutMe v-if="md"/>
+      <AboutMe v-if="md" />
       <AboutMeMobile v-else />
       <Projects />
       <Awards />
       <Testimonials v-if="md" />
-      <TestimonialsMobile v-else  />
+      <TestimonialsMobile v-else />
       <Contact />
       <footer class="relative">
         <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
@@ -64,4 +68,28 @@ onMounted(async () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#loading {
+  animation: 1.5s resize 3s ease-in-out forwards,
+  0s hide 4s forwards;
+
+  span {
+    animation: 1s hide 2s forwards;
+  }
+}
+
+@keyframes resize {
+  to {
+    width: 150dvw;
+    height: 150dvh;
+    border-radius: 0px;
+  }
+}
+
+@keyframes hide {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+</style>
