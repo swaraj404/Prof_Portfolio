@@ -1,4 +1,5 @@
 <script setup>
+import ScrollBar from './components/ScrollBar.vue';
 import LiquidNavbar from '@/components/LiquidNavbar.vue';
 import LiquidFilter from '@/filter/LiquidFilter.vue';
 import LiquidTexturedFilter from '@/filter/LiquidTexturedFilter.vue';
@@ -46,9 +47,11 @@ onMounted(async () => {
     class="outline-[100dvw] outline-white rounded-[999px] bg-transparent h-0 w-0 fixed top-1/2 left-1/2 z-[100] -translate-1/2 flex items-center justify-center">
     <span class="absolute font-ledger h-40 w-96 flex justify-center items-center">The paint is drying...</span>
   </section>
+  <ScrollBar />
   <LiquidFilter />
   <LiquidTexturedFilter />
-  <div ref="containerRef" id="container" class="overflow-auto h-dvh flex flex-col items-center font-ledger">
+  <div ref="containerRef" id="container" class="overflow-auto h-dvh flex flex-col items-center font-ledger"
+    style="scrollbar-width: none;">
     <LiquidNavbar />
     <div ref="contentRef" id="content" class=" w-full flex flex-col">
       <Home />
@@ -71,7 +74,7 @@ onMounted(async () => {
 <style scoped>
 #loading {
   animation: 1.5s resize 3s ease-in-out forwards,
-  0s hide 4s forwards;
+    0s hide 4s forwards;
 
   span {
     animation: 1s hide 2s forwards;
