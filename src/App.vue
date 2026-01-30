@@ -63,9 +63,9 @@ onMounted(async () => {
       <TestimonialsMobile v-else />
       <Contact />
       <footer class="relative">
-        <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
-          <CustomA text="Read the code here" href="https://github.com/Cyprien-png/portfolio" target="_blank" />
-        </span>
+        <!-- <span class="absolute bottom-0 text-sm p-[4dvw] opacity-60 text-white">
+          <CustomA text="the code here" href="https://github.com/Cyprien-png/portfolio" target="_blank" />
+        </span> -->
       </footer>
     </div>
   </div>
