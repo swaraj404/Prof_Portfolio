@@ -1,12 +1,10 @@
-# **Cyprien Jaquier's Portfolio**
+# **Swaraj Pawar's Portfolio**
 
 [![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=fff)](#)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)](#)
 
-A personal portfolio built with Vue JS and Tailwind CSS. Every component, interaction and animation has been created manually to demonstrate my ability to design and engineer complete front end experiences without relying on pre made libraries.
-The site is live at **[https://jaquier.dev](https://jaquier.dev)**.
-
+A personal portfolio built with Vue.js and Tailwind CSS showcasing my journey as a full-stack developer and machine learning enthusiast. Featuring stunning animations, modern design, and carefully crafted components to demonstrate both technical skills and creative development.
 
 ## **💻 Local Installation**
 
@@ -73,4 +71,4 @@ If you reuse or redistribute any part of it you must credit me clearly in your p
 ## **🙏 Acknowledgements**
 
 Special thanks to [**Drutz**](https://github.com/drutz-cpnv)
-for taking the time to provide thoughtful UI and UX feedback.
+for taking the time to provide thoughtful UI and UX feedback.# Prof_Portfolio
