@@ -1,20 +1,20 @@
 [
     {
         "writer_image": "/testimonials/man-1.jpg",
-        "writer_position": "CEO of an E-Learning solutions company",
+        "writer_position": "Senior Developer, Tech Company",
         "stars": 5,
-        "description": "Cyprien stood out for his professionalism, analytical mindset, and impressive learning agility. He consistently demonstrated autonomy, curiosity, and precision in his work. His reliability, enthusiasm, and drive for excellence make him a true asset in any collaboration. I can confidently recommend him to anyone seeking a skilled, motivated, and forward-thinking professional."
+        "description": "Swaraj is an exceptional developer with a strong grasp of both frontend and backend technologies. His work on the Publishers project showcases his ability to build complex, production-ready applications with clean architecture. His problem-solving skills and attention to detail make him a valuable asset to any team. He consistently delivers high-quality code and is always eager to learn new technologies."
     },
     {
         "writer_image": "/testimonials/man-2.jpg",
-        "writer_position": "CEO of a healthcare software company",
+        "writer_position": "Project Lead, AI Startup",
         "stars": 5,
-        "description": "Working with Cyprien was an excellent experience. He quickly understood our goals, aligned perfectly with the team, and brought valuable technical insight and structure to our workflow. His proactive mindset, clarity in communication, and ability to turn ideas into tangible results made a lasting impact. Cyprien is someone you can trust to deliver, both technically and creatively."
+        "description": "Working with Swaraj on the DeepDoc project was impressive. His understanding of machine learning, vector databases, and AI integration is remarkable. He built a sophisticated document processing system with clean code and excellent documentation. His ability to translate complex ML concepts into practical applications demonstrates both technical depth and practical thinking. Highly recommend for AI/ML projects."
     },
     {
         "writer_image": "/testimonials/man-3.jpg",
-        "writer_position": "CTO at a Medical Group",
+        "writer_position": "Tech Mentor & Consultant",
         "stars": 5,
-        "description": "Cyprien approached every collaboration with professionalism, motivation, and genuine team spirit. His adaptability and reliability made him a pleasure to work with, and his commitment to quality was evident in everything he delivered. Highly dedicated and always eager to contribute, he consistently exceeded expectations and brought a positive energy to every project."
+        "description": "Swaraj demonstrates excellent full-stack development skills and a passion for building meaningful projects. His GitHub profile shows consistent growth and learning, with well-documented projects that solve real problems. He approaches challenges methodically, writes clean maintainable code, and has strong fundamentals in software engineering. His dedication to continuous learning and improvement is commendable."
     }
 ]

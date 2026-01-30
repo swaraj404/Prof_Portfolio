@@ -1,32 +1,32 @@
 {
-    "Hire me": [
+    "Get in Touch": [
         {
-            "text": "cyprien@jaquier.dev",
-            "href": "mailto:cyprien@jaquier.dev"
+            "text": "swarajpawar404@gmail.com",
+            "href": "mailto:swarajpawar404@gmail.com"
         }
     ],
-    "Social": [
-        {
-            "text": "LinkedIn",
-            "href": "https://www.linkedin.com/in/cyprien-jaquier",
-            "target": "_blank"
-        },
-        {
-            "text": "You seem curious hahaha, you can also add me on Discord ;)",
-            "href": "r0kkxryuk",
-            "hidden": true
-        }
-    ],
-    "Open source": [
+    "Connect With Me": [
         {
             "text": "GitHub",
-            "href": "https://github.com/Cyprien-png",
+            "href": "https://github.com/swaraj404",
             "target": "_blank"
         },
         {
-            "text": "CodePen",
-            "href": "https://codepen.io/R0kkxRyuk",
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/in/swaraj-pawar-0a2457290/",
             "target": "_blank"
+        }
+    ],
+    "Check Out My Work": [
+        {
+            "text": "Portfolio",
+            "href": "#",
+            "target": "_blank"
+        },
+        {
+            "text": "Let's build something amazing!",
+            "href": "#",
+            "hidden": true
         }
     ]
 }

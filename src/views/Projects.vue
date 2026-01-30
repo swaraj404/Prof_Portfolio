@@ -40,7 +40,7 @@ onMounted(() => {
                                 <div class="gap-4 flex items-center flex-col lg:flex-row">
                                     <img :src="project.desktop_pic" alt="" class="w-full lg:w-auto lg:h-52 object-contain"/>
                                     <p class="z-20 min-h-full w-full text-white p-4 text-left">{{ project.description }}</p>
-                                    <img :src="project.mobile_pic" alt="" class="h-52 aspect-[9/16] hidden lg:block"/>
+                                    <!-- <img :src="project.mobile_pic" alt="" class="h-52 aspect-[9/16] hidden lg:block"/> -->
                                 </div>
                                 <a @mouseenter="setIsUrl(true)" @mouseleave="setIsUrl(false)" :href="project.link" class="relative w-full flex bg-center bg-cover bg-white" target="_blank">
                                     <CustomA text="View more" :href="project.link" target="_blank" class="z-10 h-full w-full p-4"/>
