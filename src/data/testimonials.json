@@ -1,13 +1,13 @@
 [
     {
         "writer_image": "/testimonials/man-1.jpg",
-        "writer_position": "Senior Developer, Tech Company",
+        "writer_position": "Senior Developer, WYNCREST AI PRIVATE LIMITED",
         "stars": 5,
         "description": "Swaraj is an exceptional developer with a strong grasp of both frontend and backend technologies. His work on the Publishers project showcases his ability to build complex, production-ready applications with clean architecture. His problem-solving skills and attention to detail make him a valuable asset to any team. He consistently delivers high-quality code and is always eager to learn new technologies."
     },
     {
         "writer_image": "/testimonials/man-2.jpg",
-        "writer_position": "Project Lead, AI Startup",
+        "writer_position": "Project Lead, Koelai",
         "stars": 5,
         "description": "Working with Swaraj on the DeepDoc project was impressive. His understanding of machine learning, vector databases, and AI integration is remarkable. He built a sophisticated document processing system with clean code and excellent documentation. His ability to translate complex ML concepts into practical applications demonstrates both technical depth and practical thinking. Highly recommend for AI/ML projects."
     },
